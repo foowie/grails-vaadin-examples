@@ -5,7 +5,7 @@ package tieto.bank.admin
  */
 class Payment {
 
-	Date date
+	Date date = new Date()
 	Integer amount
 	Account from
 	Account to
@@ -17,8 +17,8 @@ class Payment {
 		to nullable: true
 	}
 
-	def beforeInsert() {
-		if(date == null)
-			date = new Date()
-	}
+	//	def beforeInsert() {
+	//		if(date == null)
+	//			date = new Date()
+	//	}
 }

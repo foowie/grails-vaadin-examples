@@ -15,8 +15,8 @@ class ShowAccountDetailListener implements ValueChangeListener {
 		Property p = event.getProperty()
 		Account a = p.getValue()
 		app.accountDetail.setAccount(a)
-		app.accountDetail.updateState();
 
-		app.accountDetail.setVisible(a != null)
+		//		if(a && a.balance < 0)
+		//			app.getMainWindow().showNotification("Si v mínusu")
 	}
 }

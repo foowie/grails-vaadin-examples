@@ -66,7 +66,6 @@ class OwnerApp extends Application {
 		w.addComponent(tableAccounts)
 
 		w.addComponent(accountDetail)
-		accountDetail.setVisible(false)
 
 
 		setMainWindow(w)
